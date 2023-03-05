@@ -1,6 +1,6 @@
 const ReportGrupyMieloItem = (props) => {
   const outcome = () => {
-    if (props.value > 0 && props.value != Infinity) {
+    if (props.value > 0 && props.value !== Infinity) {
       return String(props.value.toFixed(1).padStart(4, "0"));
     } else return "00.00";
   };
