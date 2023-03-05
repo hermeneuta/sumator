@@ -3,9 +3,6 @@ import ReportAItem from "./ReportAItem";
 const FourthItems = props => {
 
     const selected = props.elements.filter(item => item.report.includes('fourth'));
-    const all = props.elements
-            .filter(item => item.leu)
-            .reduce((acc, cur) => acc + cur.count, 0);
 
     return (
         <div>
@@ -18,7 +15,7 @@ const FourthItems = props => {
                 count={item.count}
                 report={item.report}
                 desc={item.description}
-                all={all}
+                all={props.all}
             />)
         }
         </div>

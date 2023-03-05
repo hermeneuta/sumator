@@ -1,0 +1,77 @@
+.reportMielo__items {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 20%;
+  text-align: left;
+  justify-content: left;
+  margin-top: -4%;
+  margin-left: 50px;
+  margin-right: 50px;
+  max-width: 600px;
+}
+
+.firstMielo,
+.secondMielo,
+.thirdMielo,
+.fourthMielo,
+.fifthMielo {
+  border: solid 1px;
+  background-color: lightblue;
+  /* background-color: rgb(200,200,200); */
+  grid-column-start: 1;
+  margin-bottom: 2px;
+  border-radius: 10px;
+}
+
+.otherMielo_1,
+.otherMielo_2,
+.otherMielo_3,
+.otherMielo_4 {
+  font-size: 13px;
+  display: grid;
+  border: solid 1px;
+  border-radius: 10px;
+  margin-bottom: 2px;
+  grid-template-rows: repeat(4, 19px);
+  grid-template-columns: repeat(1, 1fr);
+  /* background-color: lightgray; */
+  text-align: center;
+  justify-content: center;
+  width: 160px;
+  /* background-color: rgb(200,200,200); */
+  background-color: lightblue;
+}
+
+.otherMielo_1 {
+  height: 70px;
+}
+
+.otherMielo_2 {
+  height: 104px;
+  grid-template-rows: repeat(6, 19px);
+  padding-top: 8%;
+  padding-bottom: 8%;
+}
+
+.otherMielo_3 {
+  height: 34px;
+  grid-template-rows: repeat(2, 19px);
+}
+
+.otherMielo_4 {
+  height: 58px;
+  grid-template-rows: repeat(2, 19px);
+  padding-top: 8%;
+}
+
+.group1,
+.group2,
+.group3,
+.group4 {
+  margin-bottom: 3px;
+}
+
+.numberMielo {
+  font-size: 14px;
+  font-weight: bold;
+}

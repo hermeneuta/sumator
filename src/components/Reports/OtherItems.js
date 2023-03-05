@@ -6,7 +6,7 @@ const OtherItems = props => {
     const selected = props.elements.filter(item => item.report.includes('other'));
 
     const allNeut = props.elements
-            .filter(item => item.group === 'neut')
+            .filter(item => item.groupNeut)
             .reduce((acc, cur) => acc + cur.count, 0);
 
     const allLim = props.elements

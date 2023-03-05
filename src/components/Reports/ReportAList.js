@@ -11,25 +11,29 @@ const ReportAList = props => {
         props.onReturn();
     }
 
-    // console.log(props.hundred);
+    //counting all leuko elements
+    const all = props.elements
+            .filter(item => item.leu)
+            .reduce((acc, cur) => acc + cur.count, 0);
+
     return (
         <div>
         <fieldset>
             <legend className='report_title'> Raport A</legend>
             <br />
-            <div className='report__items'>
+            <div className='reportA__items'>
                 <div>
                     <div className='first_items'>
-                        <FirstItems elements={props.elements} />
+                            <FirstItems elements={props.elements} all={all} />
                     </div>
                     <div className='second_items'>
-                        <SecondItems elements={props.elements} />
+                            <SecondItems elements={props.elements} all={all} />
                     </div>
                     <div className='third_items'>
-                        <ThirdItems elements={props.elements} />
+                            <ThirdItems elements={props.elements} all={all} />
                     </div>
                     <div className='fourth_items'>
-                    <FourthItems elements={props.elements} />
+                            <FourthItems elements={props.elements} all={all} />
                     </div>
                 </div>
 

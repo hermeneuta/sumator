@@ -3,18 +3,26 @@ import ReportBItem from './ReportBItem'
 
 const ReportBList = props => {
 
-    const selected = props.elements.filter(item => item.group);
+    //counting all leuko elements
+    const all = props.elements
+            .filter(item => item.leu)
+            .reduce((acc, cur) => acc + cur.count, 0);
 
-    const groups = props.elements
-        .filter(item => item.group)
-        .map(item => { return { group: item.group, count: item.count } })
-        .reduce((acc, obj) => {
-            return { ...acc, ...obj.group } 
-        }, {})
+    //Selected items that will appear in report
+    const selected = props.elements.filter(item => !item.skipB);
 
-    // const setGroups = new Set(groups);
-    console.log(groups);
+    //Create unique array with group names
+    const groupsNames = selected 
+        .map(item => item.group);
+    const groupsUniq = [...new Set(groupsNames)];
 
+    //Creating pair (group - count)
+    const dataB = groupsUniq.map(groupName => selected
+        .filter(item => item.group === groupName)
+        .reduce((acc, item) => {
+            const idNum = Math.random().toString();
+            return { id: idNum, name: item.group, count: acc.count + item.count }
+        }, {id: '', name: '', count: 0}));
 
     const returnHandler = () => {
         props.onReturn();
@@ -23,19 +31,18 @@ const ReportBList = props => {
     return (
         <div>
         <fieldset>
-            {/* <h3 className="report_title"> Raport B</h3> */}
             <legend className='report_title'> Raport B</legend>
             <br />
-            <div className='report__items'>
+            <div className='reportB__items'>
             <div>
             {
-            selected.map(item =>
+            dataB.map(item =>
                 <ReportBItem
-                    key={item.name}
-                    group={item.group}
+                    key={item.id}
+                    group={item.name}
                     count={item.count}
-                    report={item.report}
-                    desc={item.description}
+                    wbc={props.wbc}
+                    all={all}
                 />)
             }
             </div>
