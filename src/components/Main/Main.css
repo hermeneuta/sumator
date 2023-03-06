@@ -4,7 +4,7 @@
   background-color: rgb(200, 200, 200);
   height: 480px;
   border-radius: 10px;
-  border: solid 2px darkgray;
+  border: 2px solid darkgrey;
 }
 
 .elements {

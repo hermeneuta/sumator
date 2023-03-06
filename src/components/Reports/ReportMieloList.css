@@ -21,6 +21,7 @@
   grid-column-start: 1;
   margin-bottom: 2px;
   border-radius: 10px;
+  min-width: 170px;
 }
 
 .otherMielo_1,
