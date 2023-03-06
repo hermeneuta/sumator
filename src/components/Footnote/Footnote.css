@@ -1,0 +1,16 @@
+.stopka {
+  margin-top: 5%;
+}
+
+footnote {
+  display: flex;
+  color: grey;
+  font-size: 11px;
+  text-align: left;
+  justify-content: left;
+}
+
+footnote a {
+  text-decoration: none;
+  color: grey;
+}

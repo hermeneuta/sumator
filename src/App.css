@@ -1,35 +1,83 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+}
+
 .calculator {
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 600px;
 }
 
 .header {
   display: flex;
   margin-bottom: 9%;
   flex-direction: row;
-  background-color: rgb(200,200,200); 
-  height: 120px;
+  background-color: rgb(200, 200, 200);
+  /* height: 120px; */
   border-radius: 10px;
   border: solid 2px darkgray;
 }
 
 .App-logo {
   width: 100px;
-  flex: 1;
+  /* flex: 1; */
   border-radius: 10px;
 }
 
-.menu {
-  flex: 4;
-  text-align: center;
-} 
+nav ul {
+  list-style-type: none;
+  margin: auto;
+  margin-right: 10%;
+  padding: 0;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: right;
+  align-items: center;
+  gap: 1rem;
+}
+
+nav li:first-child {
+  flex-basis: 100%;
+  text-align: right;
+}
+
+/* .menu { */
+/*   flex: 4; */
+/*   text-align: center; */
+/* } */
 
 .menu__btn {
   border-radius: 10px;
-  background-color: lightblue; 
-  padding: 5px;
-  margin-right: 40px;
+  /* background-color: lightblue; */
+  /* padding: 5px; */
+  /* margin-right: 40px; */
   cursor: pointer;
+  /* margin-bottom: 10px; */
 }
 
+nav button:hover {
+  background-color: lightblue;
+  text-decoration: none;
+  display: block;
+}
+
+svg {
+  height: 1.5em;
+  width: 1.5em;
+}

@@ -6,7 +6,7 @@ const ReportGrupyMielo = (props) => {
     .reduce((acc, cur) => acc + cur.count, 0);
 
   const erytro_dys = props.elements
-    .filter((item) => item.scecial === "dys_ery")
+    .filter((item) => item.special === "dys_ery")
     .reduce((acc, cur) => acc + cur.count, 0);
 
   const granulo = props.elements
@@ -14,7 +14,7 @@ const ReportGrupyMielo = (props) => {
     .reduce((acc, cur) => acc + cur.count, 0);
 
   const granulo_dys = props.elements
-    .filter((item) => item.scecial === "dys_gran")
+    .filter((item) => item.special === "dys_gran")
     .reduce((acc, cur) => acc + cur.count, 0);
 
   const mielo = props.elements

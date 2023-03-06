@@ -47,19 +47,19 @@
 }
 
 .otherMielo_2 {
-  height: 104px;
+  height: 138px;
   grid-template-rows: repeat(6, 19px);
   padding-top: 8%;
   padding-bottom: 8%;
 }
 
 .otherMielo_3 {
-  height: 34px;
+  height: 38px;
   grid-template-rows: repeat(2, 19px);
 }
 
 .otherMielo_4 {
-  height: 58px;
+  height: 70px;
   grid-template-rows: repeat(2, 19px);
   padding-top: 8%;
 }
