@@ -25,12 +25,15 @@ const ReportGrupyMielo = (props) => {
     .filter((item) => item.szereg === "limfoidalny")
     .reduce((acc, cur) => acc + cur.count, 0);
 
-  const all = props.elements.reduce((acc, cur) => acc + cur.count, 0);
+  const all = props.elements
+    .filter((item) => item.notCount !== true)
+    .reduce((acc, cur) => acc + cur.count, 0);
 
   const id = () => {
     return Math.random().toString();
   };
 
+  console.log(erytro, all, erytro_dys);
   const groups = [
     {
       id: id(),
