@@ -2,27 +2,30 @@ fieldset {
   background-color: lightgray;
   margin-left: 10px;
   margin-right: 10px;
-  height: 390px;
+  height: 410px;
   border-radius: 10px;
   overflow: scroll;
+  font-family: "Oxygen mono", monospace;
 }
 
 .reportA__items {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  column-gap: 20%;
+  grid-template-columns: repeat(2, 0fr);
+  column-gap: 1%;
   text-align: left;
-  justify-content: left;
-  margin-top: -4%;
+  justify-content: center;
+  margin-top: -2%;
   margin-left: 50px;
   margin-right: 50px;
   max-width: 600px;
+  justify-items: center;
 }
 
 .report__item {
   display: grid;
   font-size: 14px;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(2, 65px 80px);
+  height: 17px;
 }
 
 .first_items,
@@ -30,16 +33,15 @@ fieldset {
 .third_items {
   border: solid 1px;
   background-color: lightblue;
-  /* background-color: rgb(200,200,200); */
   grid-column-start: 1;
   margin-bottom: 2px;
   border-radius: 10px;
-  min-width: 180px;
+  width: 150px;
 }
 
 .fourth_items {
   grid-column-start: 1;
-  min-width: 180px;
+  width: 150px;
 }
 
 .other1,
@@ -62,15 +64,20 @@ fieldset {
   width: 120px;
   /* background-color: rgb(200,200,200); */
   background-color: lightblue;
+  height: 42px;
 }
 
 .other4 {
-  margin-top: 8px;
+  margin-top: 5px;
+  height: 38px;
+}
+
+.other8 {
+  height: 36px;
 }
 
 .name {
-  text-align: left;
-  padding-left: 5px;
+  text-align: right;
   cursor: pointer;
 }
 

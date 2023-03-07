@@ -12,7 +12,7 @@ const ReportGrupyMieloItem = (props) => {
 
   return (
     <div className={props.style}>
-      <div className="nameMielo">{props.name}</div>
+      <div className="nameGrupaMielo">{props.name}</div>
       <div className={clNumber()}> {outcome()} </div>
     </div>
   );

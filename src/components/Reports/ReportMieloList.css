@@ -1,10 +1,10 @@
 .reportMielo__items {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  column-gap: 20%;
-  text-align: left;
-  justify-content: left;
-  margin-top: -4%;
+  grid-template-columns: repeat(2, 0fr);
+  column-gap: 1%;
+  justify-content: center;
+  align-items: right;
+  margin-top: -2%;
   margin-left: 50px;
   margin-right: 50px;
   max-width: 600px;
@@ -21,7 +21,7 @@
   grid-column-start: 1;
   margin-bottom: 2px;
   border-radius: 10px;
-  min-width: 170px;
+  width: 150px;
 }
 
 .otherMielo_1,
@@ -37,8 +37,8 @@
   grid-template-columns: repeat(1, 1fr);
   /* background-color: lightgray; */
   text-align: center;
-  justify-content: center;
-  width: 160px;
+  justify-items: center;
+  width: 170px;
   /* background-color: rgb(200,200,200); */
   background-color: lightblue;
 }
@@ -49,18 +49,18 @@
 
 .otherMielo_2 {
   height: 138px;
-  grid-template-rows: repeat(6, 19px);
-  padding-top: 8%;
-  padding-bottom: 8%;
+  grid-template-rows: repeat(6, 40px);
+  align-items: start;
+  padding: 2%;
 }
 
 .otherMielo_3 {
-  height: 38px;
+  height: 37px;
   grid-template-rows: repeat(2, 19px);
 }
 
 .otherMielo_4 {
-  height: 70px;
+  height: 68px;
   grid-template-rows: repeat(2, 19px);
   padding-top: 8%;
 }
@@ -69,7 +69,18 @@
 .group2,
 .group3,
 .group4 {
-  margin-bottom: 3px;
+  margin-bottom: 4px;
+}
+
+.nameGrupaMielo {
+  text-align: center;
+  padding-left: 10px;
+  margin-top: 2px;
+}
+
+.nameMielo {
+  text-align: right;
+  padding-left: 10px;
 }
 
 .numberMielo {

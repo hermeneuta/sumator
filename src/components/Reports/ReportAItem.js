@@ -37,9 +37,14 @@ const ReportAItem = (props) => {
     else return "number";
   };
 
+  const clName_ = () => {
+    if (props.report.includes("other")) return "name_";
+    else return "name";
+  };
+
   return (
     <div className={clName}>
-      <div title={props.desc} className="name">
+      <div title={props.desc} className={clName_()}>
         {props.name}
       </div>
       <div className={clNumber()}>{percent()} %</div>
