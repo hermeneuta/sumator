@@ -41,7 +41,7 @@ const ReportGrupyMielo = (props) => {
     {
       id: id(),
       name: "w tym dysplastyczne",
-      value: (erytro_dys * 100) / (erytro + erytro_dys),
+      value: (erytro_dys * 100) / erytro,
       style: "group1",
     },
     {
@@ -53,7 +53,7 @@ const ReportGrupyMielo = (props) => {
     {
       id: id(),
       name: "w tym dysplastyczne",
-      value: (granulo_dys * 100) / (granulo + granulo_dys),
+      value: (granulo_dys * 100) / granulo,
       style: "group2",
     },
     {

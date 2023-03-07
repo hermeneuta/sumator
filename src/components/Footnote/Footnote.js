@@ -4,7 +4,7 @@ const Footnote = () => {
   return (
     <div className="stopka">
       <hr />
-      <footnote>
+      <div className="footnote">
         <a href="https://github.com/hermeneuta">
           <svg
             aria-hidden="true"
@@ -16,7 +16,7 @@ const Footnote = () => {
           </svg>
           <div>© 2023 mathesis</div>
         </a>
-      </footnote>
+      </div>
     </div>
   );
 };

@@ -6,7 +6,7 @@ const ReportBItem = (props) => {
   const outcome = () => {
     if (props.count > 0 && props.all > 0 && props.wbc > 0) {
       return String(
-        (((props.count * 100) / props.all) * props.wbc).toFixed(2)
+        ((props.count / props.all) * props.wbc).toFixed(2)
       ).padStart(5, "0");
     } else {
       return "00.00";

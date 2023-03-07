@@ -1,4 +1,4 @@
-import logo from "./dco.jpg";
+import logo from "./dcopih_new_.png";
 import "./App.css";
 import Leukogram from "./components/Main/Leukogram";
 import Mielogram from "./components/Main/Mielogram";
