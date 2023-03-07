@@ -36,8 +36,10 @@ h3 {
 
 .App-logo {
   width: 100px;
+  height: 80px;
   /* flex: 1; */
   border-radius: 10px;
+  background-color: white;
 }
 
 nav ul {
