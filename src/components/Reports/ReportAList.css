@@ -61,7 +61,7 @@ fieldset {
   /* background-color: lightgray; */
   text-align: center;
   justify-content: center;
-  width: 120px;
+  width: 140px;
   /* background-color: rgb(200,200,200); */
   background-color: lightblue;
   height: 42px;
@@ -87,8 +87,7 @@ fieldset {
 }
 
 .number {
-  text-align: left;
-  padding-left: 30%;
+  text-align: center;
   font-weight: bold;
 }
 
@@ -115,4 +114,8 @@ fieldset {
   width: 80px;
   margin: auto;
   background-color: rgb(200, 200, 200);
+}
+
+.unitA {
+  font-size: 12px;
 }

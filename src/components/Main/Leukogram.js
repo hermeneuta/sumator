@@ -14,6 +14,7 @@ function Leukogram(props) {
       count: 0,
       report: "first",
       leu: true, //określa obecność we wzorze odsetkowym leukocytów
+      unit: "%",
     },
     {
       name: "PMIE",
@@ -22,6 +23,7 @@ function Leukogram(props) {
       count: 0,
       report: "first",
       leu: true,
+      unit: "%",
     },
     {
       name: "MIE",
@@ -30,6 +32,7 @@ function Leukogram(props) {
       count: 0,
       report: "first",
       leu: true,
+      unit: "%",
     },
     {
       name: "MET",
@@ -38,6 +41,7 @@ function Leukogram(props) {
       count: 0,
       report: "first",
       leu: true,
+      unit: "%",
     },
     {
       name: "PAL",
@@ -47,6 +51,7 @@ function Leukogram(props) {
       count: 0,
       report: "first",
       leu: true,
+      unit: "%",
     },
     {
       name: "NEU",
@@ -57,6 +62,7 @@ function Leukogram(props) {
       count: 0,
       report: "first",
       leu: true,
+      unit: "%",
     },
     {
       name: "EO",
@@ -65,6 +71,7 @@ function Leukogram(props) {
       count: 0,
       report: "first",
       leu: true,
+      unit: "%",
     },
     {
       name: "BAZO",
@@ -73,6 +80,7 @@ function Leukogram(props) {
       count: 0,
       report: "first",
       leu: true,
+      unit: "%",
     },
     {
       name: "LIM",
@@ -81,6 +89,7 @@ function Leukogram(props) {
       count: 0,
       report: "third",
       leu: true,
+      unit: "%",
     },
     {
       name: "ALI-R",
@@ -89,6 +98,7 @@ function Leukogram(props) {
       count: 0,
       report: "third",
       leu: true,
+      unit: "%",
     },
     {
       name: "ALI-N",
@@ -97,6 +107,7 @@ function Leukogram(props) {
       count: 0,
       report: "third",
       leu: true,
+      unit: "%",
     },
     {
       name: "PLIM",
@@ -105,6 +116,7 @@ function Leukogram(props) {
       count: 0,
       report: "third",
       leu: true,
+      unit: "%",
     },
     {
       name: "ALI",
@@ -113,6 +125,7 @@ function Leukogram(props) {
       count: 0,
       report: "third",
       leu: true,
+      unit: "%",
     },
     {
       name: "LGL",
@@ -121,6 +134,7 @@ function Leukogram(props) {
       count: 0,
       report: "third",
       leu: true,
+      unit: "%",
     },
     {
       name: "PLA",
@@ -129,6 +143,7 @@ function Leukogram(props) {
       count: 0,
       report: "third",
       leu: true,
+      unit: "%",
     },
     {
       name: "LIPLA",
@@ -137,6 +152,7 @@ function Leukogram(props) {
       count: 0,
       report: "third",
       leu: true,
+      unit: "%",
     },
     {
       name: "PMO",
@@ -145,6 +161,7 @@ function Leukogram(props) {
       count: 0,
       report: "second",
       leu: true,
+      unit: "%",
     },
     {
       name: "MON",
@@ -153,6 +170,7 @@ function Leukogram(props) {
       count: 0,
       report: "second",
       leu: true,
+      unit: "%",
     },
     {
       name: "CK",
@@ -161,6 +179,7 @@ function Leukogram(props) {
       count: 0,
       report: "fourth individual",
       leu: true,
+      unit: "%",
     },
     {
       name: "K1",
@@ -169,7 +188,7 @@ function Leukogram(props) {
       count: 0,
       leu: true,
       report: "fourth individual",
-      note: "Procentowa prezentacja razem z K2",
+      unit: "%",
     },
     {
       name: "HipoG",
@@ -180,8 +199,8 @@ function Leukogram(props) {
       leu: false,
       report: "other other1",
       display: "first_column",
-      skipB: true,
-      note: "% neut",
+      skipB: true, // Nie ujęty w raporcie B
+      unit: "%Neut",
     },
     {
       name: "HiperG",
@@ -192,7 +211,7 @@ function Leukogram(props) {
       leu: false,
       report: "other other2",
       skipB: true,
-      note: "% neut",
+      unit: "%Neut",
     },
     {
       name: "HiperS",
@@ -203,7 +222,7 @@ function Leukogram(props) {
       leu: false,
       report: "other other3",
       skipB: true,
-      note: "% neut",
+      unit: "%Neut",
     },
     {
       name: "WOD",
@@ -214,7 +233,7 @@ function Leukogram(props) {
       leu: false,
       report: "other other4",
       skipB: true,
-      note: "% neut",
+      unit: "%Neut",
     },
     {
       name: "LGL% LIM",
@@ -223,6 +242,7 @@ function Leukogram(props) {
       hiden: true,
       skipB: true,
       report: "other other5",
+      unit: "%LIM",
     },
     {
       name: "PLIM% ALIN",
@@ -231,6 +251,7 @@ function Leukogram(props) {
       hiden: true,
       skipB: true,
       report: "other other6",
+      unit: "%ALIN",
     },
     {
       name: "JERY",
@@ -239,7 +260,8 @@ function Leukogram(props) {
       leu: false,
       report: "other other7",
       skipB: true,
-      note: "liczba/100 leu",
+      unit: "",
+      // unit: "l./100LEU",
     },
     {
       name: "INNE",
@@ -250,11 +272,11 @@ function Leukogram(props) {
       report: "other other8",
       display: "last_column",
       skipB: true,
-      note: "liczba/100 leu",
+      unit: "",
+      // unit: "l./100LEU",
     },
   ];
 
-  // const [hundredSituation, setHundredSituation] = useState(0);
   const [report, setReport] = useState("");
   const [elementsObs, setElementsObs] = useState(names);
   //Historia uzyteczna dla funkcjonalnosci przycisku Cofnij
@@ -285,13 +307,7 @@ function Leukogram(props) {
 
   const onOblicz = () => {
     setShowReport(true);
-    setReport(
-      <ReportAList
-        elements={elementsObs}
-        onReturn={onReturn}
-        // hundred={hundredSituation}
-      />
-    );
+    setReport(<ReportAList elements={elementsObs} onReturn={onReturn} />);
   };
 
   const onCofnij = () => {
@@ -316,14 +332,6 @@ function Leukogram(props) {
     );
   };
 
-  // const onHundred = (data) => {
-  // console.log(hundredSituation);
-  // setHundredSituation(data[0]);
-  // setHundredSituation(prevData => {
-  //   return {...prevData, jery: data[0], inne: data[1]}
-  // });
-  // };
-
   return (
     <div className="elements">
       <div className="back">
@@ -342,7 +350,6 @@ function Leukogram(props) {
           onReset={onReset}
           onPrzelicz={onPrzelicz}
           onOblicz={onOblicz}
-          // onHundred={onHundred}
           onCofnij={onCofnij}
           history={history}
         />

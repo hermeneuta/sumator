@@ -1,5 +1,5 @@
 import "./SummaryPanel.css";
-import sound from "../assets/hundred.wav";
+import sound from "../assets/hundred2.wav";
 import Oblicz from "./Oblicz";
 import Przelicz from "./Przelicz";
 import History from "./History";
@@ -17,10 +17,6 @@ export default function Reports(props) {
 
     if (summary > 0 && summary % 100 === 0) {
       new Audio(sound).play();
-      // const dataCol = props.elements.filter(
-      //   (item) => item.name === "JERY" || item.name === "INNE"
-      // );
-      // props.onHundred([dataCol[0].count, dataCol[1].count]);
     }
 
     return summary;

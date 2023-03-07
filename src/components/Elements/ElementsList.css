@@ -1,33 +1,33 @@
 .items {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-auto-rows: 50px; 
-    text-align: center;
-    justify-content: center;
-    margin-left: 50px;
-    margin-right: 50px;
-    max-width: 600px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: 60px;
+  text-align: center;
+  justify-content: center;
+  margin-left: 50px;
+  margin-right: 50px;
+  max-width: 600px;
 }
 
 .item {
-    border: solid;
-    cursor: pointer;
-    margin: 1px;
-    border-radius: 10px;
+  border: solid;
+  cursor: pointer;
+  margin: 1px;
+  border-radius: 10px;
 }
 
 .first_column {
-    grid-column-start: 1;
+  grid-column-start: 1;
 }
 
 .last_column {
-    grid-column-start: 4;
+  grid-column-start: 4;
 }
 
 .expand1 {
-    grid-column: 1 / 3;
+  grid-column: 1 / 3;
 }
 
 .expand2 {
-    grid-column: 3 / 5;
+  grid-column: 3 / 5;
 }

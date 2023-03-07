@@ -22,17 +22,28 @@ const ReportAItem = (props) => {
         4,
         "0"
       );
-    } else if (props.name === "JERY") {
-      return "...";
-    } else if (props.name === "INNE") {
-      return "...";
+    } else if (props.name === "JERY" && props.count > 0 && props.allLeu > 0) {
+      return String(((props.count * 100) / props.allLeu).toFixed()).padStart(
+        2,
+        "0"
+      );
+    } else if (props.name === "INNE" && props.count > 0 && props.allLeu > 0) {
+      return String(((props.count * 100) / props.allLeu).toFixed()).padStart(
+        4,
+        "0"
+      );
+    } else if (
+      (props.name === "INNE" || props.name === "JERY") &&
+      (props.count === 0 || props.allLeu === 0)
+    ) {
+      return "00";
     } else {
       return "00.0";
     }
   };
 
   const clNumber = () => {
-    if (percent() === "00.0" || percent() === "...")
+    if (percent() === "00.0" || percent() === "00")
       return "number number_inactive";
     else return "number";
   };
@@ -42,12 +53,18 @@ const ReportAItem = (props) => {
     else return "name";
   };
 
+  const unitFormat = () => {
+    if (props.name === "JERY" || props.name === "INNE") return "";
+    else return "%";
+  };
   return (
     <div className={clName}>
       <div title={props.desc} className={clName_()}>
         {props.name}
       </div>
-      <div className={clNumber()}>{percent()} %</div>
+      <div className={clNumber()}>
+        {percent()} {unitFormat()}
+      </div>
     </div>
   );
 };

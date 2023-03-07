@@ -1,26 +1,26 @@
 import ReportAItem from "./ReportAItem";
 
-const FirstItems = props => {
+const FirstItems = (props) => {
+  const selected = props.elements.filter((item) =>
+    item.report.includes("first")
+  );
 
-    const selected = props.elements.filter(item => item.report.includes('first'));
-
-    return (
-        <div>
-        {
-        selected.map(item =>
-            <ReportAItem
-                key={item.name}
-                leu={item.leu}
-                name={item.name}
-                count={item.count}
-                report={item.report}
-                desc={item.description}
-                all={props.all}
-            />)
-        }
-        </div>
-        
-    )
-}
+  return (
+    <div>
+      {selected.map((item) => (
+        <ReportAItem
+          key={item.name}
+          leu={item.leu}
+          name={item.name}
+          count={item.count}
+          report={item.report}
+          desc={item.description}
+          all={props.all}
+          unit={item.unit}
+        />
+      ))}
+    </div>
+  );
+};
 
 export default FirstItems;
