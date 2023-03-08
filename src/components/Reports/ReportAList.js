@@ -9,7 +9,7 @@ const ReportAList = (props) => {
   const returnHandler = () => {
     props.onReturn();
   };
-
+  //TODO refactoring
   //counting all leuko elements
   const all = props.elements
     .filter((item) => item.leu)

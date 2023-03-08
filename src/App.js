@@ -16,8 +16,6 @@ function App() {
     setShowLeuko(false);
   };
 
-  // <div className="menu">// </div>
-  // <img src={logo} className="App-logo" alt="logo" />
   return (
     <div className="calculator">
       <div>
