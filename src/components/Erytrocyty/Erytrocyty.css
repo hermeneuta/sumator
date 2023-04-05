@@ -1,0 +1,153 @@
+/* Eliminacja strzałek w polu z typem number */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+/* Formatowanie całości komponentu */
+.erytro_back {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  background-color: rgb(200, 200, 200);
+  height: 700px;
+  border-radius: 10px;
+  border: solid 2px darkgray;
+}
+
+.erytro_elements {
+  margin-top: -50px;
+}
+
+/* ---- */
+
+.erytro_element {
+    position: relative;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 10px;
+    border: solid 2px darkgray;
+    border-radius: 10px;
+    font-family: "Oxygen mono", monospace;
+    height: 100px;
+    font-weight: bold;
+}
+
+.number_wrapper {
+    margin-bottom: -20px;
+}
+
+.name_wrapper {
+    display: flex;
+    justify-content: center;
+    margin: 8px;
+} 
+
+.legend_number {
+    text-align: right;
+}
+
+.name_select {
+    display: flex;
+    text-align: center;
+    background-color: lightgray; 
+    border-radius: 5px;
+    font-family: "Oxygen mono", monospace;
+    font-weight: bold;
+    margin-bottom: 4px;
+}
+
+
+.name_select:hover {
+    cursor: pointer;
+}
+
+.pole_wrapper {
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    margin-top: 10px;
+
+}
+
+.pole {
+    text-align: center;
+    background-color: lightgray;
+    width: 35px;
+}
+
+.pole_number {
+    display: flex;
+    font-weight: lighter;
+}
+
+.nbr {
+    text-align: center;
+    font-size: 10px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.pole_average, .pole_severity {
+  background-color: lightblue;
+  border: 2px solid rgb(200, 200, 200);
+  border-radius: 5px;
+  font-weight: bold;
+  /* justify-content: center; */
+  width: 44px;
+  font-family: "Oxygen mono", monospace;
+}
+
+.pole_severity {
+  background-color: #04bf8a;
+}
+
+.erytro_outcome {
+    display: inline-flex;
+    margin-top: 34px;
+    margin-left: 2px;
+    margin-top: 10px;
+}
+
+.erytro_intro {
+    display: flex;
+    flex-direction: column;
+}
+
+.erytro_mod {
+    display: flex;
+    margin:auto;
+    margin-bottom: 10px;
+    margin-top: -10px;
+    gap: 5px;
+}
+
+.btn_erytro_oblicz {
+    border-radius: 5px;
+    margin-top: 11px;
+}
+
+.btn_erytro_oblicz:hover {
+    cursor: pointer;
+    background-color: lightblue;
+}
+
+.dodaj, .odejmij {
+    display: inline-flex;
+    margin: auto;
+    margin-top: 10px;
+    border-radius: 5px;
+    cursor: pointer;    
+    width: 25px;
+    height: 25px;
+    font-size: medium;
+    justify-content: center;
+}
+
+.dodaj:hover, .odejmij:hover {
+  background-color: lightblue;
+}
+
