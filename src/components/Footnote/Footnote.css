@@ -3,14 +3,26 @@
 }
 
 .footnote {
-  display: flex;
+  /* display: flex; */
   color: grey;
   font-size: 11px;
-  text-align: left;
-  justify-content: left;
+  /* text-align: left;
+  justify-content: left; */
 }
 
 .footnote a {
   text-decoration: none;
   color: grey;
 }
+.icons {
+  display: flex;
+  margin-bottom: 5px;
+  gap: 10px;
+}
+
+.info_contact {
+  display: flex;
+  flex-direction: row;
+  gap: 385px;
+}
+

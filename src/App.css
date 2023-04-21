@@ -32,6 +32,12 @@ h3 {
   /* height: 120px; */
   border-radius: 10px;
   border: solid 2px darkgray;
+  height: 100px;
+}
+
+.logo-lab {
+margin: auto;
+margin-left: 60px;
 }
 
 .App-logo {
@@ -45,18 +51,18 @@ h3 {
 nav ul {
   list-style-type: none;
   margin: auto;
-  margin-right: 10%;
+  /* margin-right: 10%; */
   padding: 0;
   display: flex;
   flex-flow: row wrap;
-  justify-content: right;
+  justify-content: center;
   align-items: center;
   gap: 1rem;
 }
 
 nav li:first-child {
   flex-basis: 100%;
-  text-align: right;
+  text-align: center;
 }
 
 /* .menu { */
