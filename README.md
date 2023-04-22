@@ -1,5 +1,7 @@
 # Sumator hematologiczny
 
+## Link: https://diagnostykatest.netlify.app/
+
 ## Główne zakładki:
 - Leukogram -> Generowanie raportu A i B
 - Mielogram -> Generowanie raportu A
