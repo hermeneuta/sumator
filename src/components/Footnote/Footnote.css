@@ -2,6 +2,20 @@
   margin-top: 5%;
 }
 
+.stopka__group {
+  display: flex;
+  justify-content: space-between;
+}
+
+.tworcy {
+  margin-left: 0;
+}
+
+/* .tworcy__btn { */
+/*   border-radius: 10px; */
+/*   cursor: pointer; */
+/* } */
+
 .footnote {
   /* display: flex; */
   color: grey;
@@ -25,4 +39,3 @@
   flex-direction: row;
   gap: 385px;
 }
-

@@ -5,32 +5,32 @@ const ReportAItem = (props) => {
     if (props.count > 0 && props.leu) {
       return String(((props.count * 100) / props.all).toFixed(1)).padStart(
         4,
-        "0"
+        "0",
       );
     } else if (props.count > 0 && props.group === "neut") {
-      return String(((props.count * 100) / props.allNeut).toFixed(1)).padStart(
+      return String(((props.count * 100) / props.allNeu).toFixed(1)).padStart(
         4,
-        "0"
+        "0",
       );
     } else if (props.name === "PLIM% ALIN" && props.plimalin > 0) {
       return String(((props.plim * 100) / props.plimalin).toFixed(1)).padStart(
         4,
-        "0"
+        "0",
       );
     } else if (props.name === "LGL% LIM" && props.allLim > 0) {
       return String(((props.lgl * 100) / props.allLim).toFixed(1)).padStart(
         4,
-        "0"
+        "0",
       );
     } else if (props.name === "JERY" && props.count > 0 && props.allLeu > 0) {
       return String(((props.count * 100) / props.allLeu).toFixed()).padStart(
         2,
-        "0"
+        "0",
       );
     } else if (props.name === "INNE" && props.count > 0 && props.allLeu > 0) {
       return String(((props.count * 100) / props.allLeu).toFixed()).padStart(
         4,
-        "0"
+        "0",
       );
     } else if (
       (props.name === "INNE" || props.name === "JERY") &&

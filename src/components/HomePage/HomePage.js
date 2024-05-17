@@ -4,7 +4,6 @@ import Leukogram from "../Main/Leukogram";
 import Mielogram from "../Main/Mielogram";
 import Erytrocyty from "../Main/Erytrocyty";
 import Footnote from "../Footnote/Footnote";
-import About from "../About/About";
 import React, { useState } from "react";
 
 function HomePage() {
@@ -25,10 +24,6 @@ function HomePage() {
 
   const erytroHandler = () => {
     setShow(2);
-  };
-
-  const goToAbout = () => {
-    setShow(3);
   };
 
   return (
@@ -59,11 +54,6 @@ function HomePage() {
                   Erytrocyty
                 </button>
               </li>
-              <li>
-                <button className="tworcy__btn" onClick={goToAbout}>
-                  Twórcy
-                </button>
-              </li>
             </ul>
           </nav>
         </div>
@@ -82,12 +72,6 @@ function HomePage() {
           <div>
             {" "}
             <Erytrocyty chosen={"Erytrocyty"} />{" "}
-          </div>
-        )}
-        {show === 3 && (
-          <div>
-            {" "}
-            <About />{" "}
           </div>
         )}
         <Footnote />

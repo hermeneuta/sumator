@@ -2,10 +2,30 @@
 import "./About.css";
 import React from "react";
 import judyta from "../assets/judyta.jpg";
+import { useNavigate } from "react-router-dom";
+import Footnote from "../Footnote/Footnote";
 
 function About() {
+  const navigate = useNavigate();
+
+  const goToCalculator = () => {
+    navigate("/");
+  };
+
   return (
-    <div>
+    <div className="calculator">
+      <nav className="header">
+        <ul>
+          <li>
+            <h1>Sumator hematologiczny</h1>
+          </li>
+          <li>
+            <button className="menu__btn" onClick={goToCalculator}>
+              Powrót do Sumatora
+            </button>
+          </li>
+        </ul>
+      </nav>
       <h1
         style={{
           display: "flex",
@@ -48,6 +68,7 @@ function About() {
           </p>
         </div>
       </div>
+      <Footnote />
     </div>
   );
 }
