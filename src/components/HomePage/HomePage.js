@@ -60,7 +60,7 @@ function HomePage() {
                 </button>
               </li>
               <li>
-                <button className="menu__btn" onClick={goToAbout}>
+                <button className="tworcy__btn" onClick={goToAbout}>
                   Twórcy
                 </button>
               </li>

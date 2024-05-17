@@ -80,6 +80,13 @@ nav li:first-child {
   /* margin-bottom: 10px; */
 }
 
+.tworcy__btn {
+  border-radius: 1px;
+  background-color: lightgrey;
+  cursor: pointer;
+  border: solid 2px;
+}
+
 nav button:hover {
   background-color: lightblue;
   text-decoration: none;
