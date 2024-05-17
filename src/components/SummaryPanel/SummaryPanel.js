@@ -44,8 +44,6 @@ export default function Reports(props) {
     setEnterAmount(e.target.value);
   };
 
-  console.log(props.history);
-
   return (
     <div className="report">
       <div className="summary">

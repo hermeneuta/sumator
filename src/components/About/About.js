@@ -36,7 +36,7 @@ function About() {
       >
         Twórcy
       </h1>
-      <h2 className="margin:10">Judyta Kownacka</h2>
+      <h2 className="margin:10">mgr. Judyta Kownacka</h2>
       <div
         style={{
           display: "flex",

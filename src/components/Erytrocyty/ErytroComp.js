@@ -48,7 +48,6 @@ function ErytroComp(props) {
   const selectedHandler = (e) => {
     const selected = e.target.value;
     setSelectedElement(selected);
-    console.log(selected);
   };
 
   const obsHandler = (e) => {
@@ -66,7 +65,6 @@ function ErytroComp(props) {
 
   const obsFormHandler = (e) => {
     e.preventDefault();
-    console.log("Form ", obsVal);
     setResult(
       <div>
         <OutcomeErytro

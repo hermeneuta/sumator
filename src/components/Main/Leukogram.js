@@ -312,7 +312,6 @@ function Leukogram(props) {
       return item.name === reduce ? { ...item, count: curCount - 1 } : item;
     });
 
-    console.log(updateElementsObs[0].name, updateElementsObs[0].count);
     setElementsObs(updateElementsObs);
 
     if (history.length === 0) setHistory(["-"]);
