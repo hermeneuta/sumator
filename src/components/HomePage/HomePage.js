@@ -5,6 +5,7 @@ import Mielogram from "../Main/Mielogram";
 import Erytrocyty from "../Main/Erytrocyty";
 import Footnote from "../Footnote/Footnote";
 import React, { useState } from "react";
+import { Analytics } from "@vercel/analytics/react";
 
 function HomePage() {
   //show allows to view certain display:
@@ -28,6 +29,7 @@ function HomePage() {
 
   return (
     <>
+      <Analytics />
       <div className="calculator">
         <div>
           <nav className="header">
