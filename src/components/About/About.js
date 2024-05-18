@@ -44,21 +44,31 @@ function About() {
           gap: "20px",
         }}
       >
-        <img
-          src={judyta}
-          alt="Judyta Kownacka"
-          style={{ width: "200px", height: "200px" }}
-        />
+        <div
+          style={{
+            display: "flex",
+            flexDirection: "column",
+          }}
+        >
+          <img
+            src={judyta}
+            alt="Judyta Kownacka"
+            style={{ width: "200px", height: "200px" }}
+          />
+          <div style={{ fontSize: "12px", marginLeft: "auto" }}>
+            fot. Anna Kobierna
+          </div>
+        </div>
         <div>
           <p style={{ fontWeight: "bold", justifyContent: "flex" }}>
-            Pomysłodawczyni i koordynatorka projektu
+            Koordynatorka projektu
           </p>
           <p>
             Pracuje w Zakładzie Diagnostyki Laboratoryjnej Dolnośląskiego
-            Centrum Onkologii, Pulmonologii i Hematologii, na stanowisku młodszy
-            asystent jako diagnosta laboratoryjny. Absolwentka Uniwersytetu
-            Medycznego im. Piastów Śląskich we Wrocławiu na kierunku analityka
-            medyczna.
+            Centrum Onkologii, Pulmonologii i Hematologii, na stanowisku
+            młodszego asystenta jako diagnosta laboratoryjny. Absolwentka
+            Uniwersytetu Medycznego im. Piastów Śląskich we Wrocławiu na
+            kierunku Analityka Medyczna.
           </p>
           <p>
             <span style={{ fontWeight: "bold" }}>kontakt: </span>
