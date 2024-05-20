@@ -3,7 +3,6 @@ import "./About.css";
 import React from "react";
 import judyta from "../assets/judyta.jpg";
 import aneta from "../assets/aneta.jpg";
-import mat from "../assets/mat.jpg";
 import { useNavigate } from "react-router-dom";
 import Footnote from "../Footnote/Footnote";
 import Tworca from "./Tworca";
