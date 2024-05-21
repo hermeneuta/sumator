@@ -58,7 +58,6 @@ function Leukogram(props) {
       description:
         "neutrocyty – granulocyty obojętnochłonne z jądrem podzielonym",
       group: "neut",
-      groupNeut: true,
       count: 0,
       report: "first",
       leu: true,
@@ -194,7 +193,6 @@ function Leukogram(props) {
       name: "HipoG",
       description: "granulocyty hipogranularne",
       group: "neut",
-      groupNeut: true,
       count: 0,
       leu: false,
       report: "other other1",
@@ -206,7 +204,6 @@ function Leukogram(props) {
       name: "HiperG",
       description: "granulocyty hipergranularne",
       group: "neut",
-      groupNeut: true,
       count: 0,
       leu: false,
       report: "other other2",
@@ -217,7 +214,6 @@ function Leukogram(props) {
       name: "HiperS",
       description: "granulocyty hipersegmentowane",
       group: "neut",
-      groupNeut: true,
       count: 0,
       leu: false,
       report: "other other3",
@@ -228,7 +224,6 @@ function Leukogram(props) {
       name: "WOD",
       description: "granulocyty z wodniczkami",
       group: "neut",
-      groupNeut: true,
       count: 0,
       leu: false,
       report: "other other4",
@@ -295,7 +290,7 @@ function Leukogram(props) {
 
   const detected = (element) => {
     const newElements = elementsObs.map((item) =>
-      item.name === element ? { ...item, count: (item.count += 1) } : item
+      item.name === element ? { ...item, count: (item.count += 1) } : item,
     );
     setElementsObs(newElements);
     setHistory([...history, element]);
@@ -317,7 +312,6 @@ function Leukogram(props) {
       return item.name === reduce ? { ...item, count: curCount - 1 } : item;
     });
 
-    console.log(updateElementsObs[0].name, updateElementsObs[0].count);
     setElementsObs(updateElementsObs);
 
     if (history.length === 0) setHistory(["-"]);
@@ -328,7 +322,11 @@ function Leukogram(props) {
     const wbcAmount = wbc;
     setShowReport(true);
     setReport(
-      <ReportBList elements={elementsObs} onReturn={onReturn} wbc={wbcAmount} />
+      <ReportBList
+        elements={elementsObs}
+        onReturn={onReturn}
+        wbc={wbcAmount}
+      />,
     );
   };
 

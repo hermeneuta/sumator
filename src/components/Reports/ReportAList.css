@@ -4,7 +4,7 @@ fieldset {
   margin-right: 10px;
   height: 410px;
   border-radius: 10px;
-  overflow: scroll;
+  /* overflow: scroll; */
   font-family: "Oxygen mono", monospace;
 }
 

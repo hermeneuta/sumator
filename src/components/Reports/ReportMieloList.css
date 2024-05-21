@@ -69,6 +69,12 @@
   margin-bottom: 4px;
 }
 
+.together {
+  padding-top: 8%;
+  display: flex;
+  gap: 20px;
+}
+
 .nameGrupaMielo {
   text-align: center;
   padding-left: 10px;

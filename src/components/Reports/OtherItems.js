@@ -2,11 +2,11 @@ import ReportAItem from "./ReportAItem";
 
 const OtherItems = (props) => {
   const selected = props.elements.filter((item) =>
-    item.report.includes("other")
+    item.report.includes("other"),
   );
 
-  const allNeut = props.elements
-    .filter((item) => item.groupNeut)
+  const allNeu = props.elements
+    .filter((item) => item.name === "NEU")
     .reduce((acc, cur) => acc + cur.count, 0);
 
   const allLim = props.elements
@@ -36,7 +36,7 @@ const OtherItems = (props) => {
           report={item.report}
           desc={item.description}
           unit={item.unit}
-          allNeut={allNeut}
+          allNeu={allNeu}
           allLim={allLim}
           allLeu={props.all}
           lgl={lgl}

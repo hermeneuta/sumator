@@ -171,7 +171,7 @@ function Mielogram(props) {
       name: "DYS ERY",
       description: "Komórki dysplastycze w szeregu erytroidalnym",
       count: 0,
-      display: "first_column expand1",
+      display: "first_column",
       report: "otherMielo",
       notCount: true,
       special: "dys_ery",
@@ -180,10 +180,28 @@ function Mielogram(props) {
       name: "DYS GRAN",
       description: "Komórki dysplastyczne w szeregu granulocytowym",
       count: 0,
-      display: "expand2",
+      // display: "expand2",
       report: "otherMielo",
       notCount: true,
       special: "dys_gran",
+    },
+    {
+      name: "MEG ERY",
+      description: "Komórki megaloidalne wśród wszystkich erytroblastów",
+      count: 0,
+      // display: "expand2",
+      report: "otherMielo",
+      notCount: true,
+      special: "meg_ery",
+    },
+    {
+      name: "MEG GRAN",
+      description: "Komórki megaloidalne wśród wszystkich granulocytów",
+      count: 0,
+      // display: "expand2",
+      report: "otherMielo",
+      notCount: true,
+      special: "meg_gran",
     },
   ];
 
@@ -205,7 +223,7 @@ function Mielogram(props) {
 
   const detected = (element) => {
     const newElements = elementsObs.map((item) =>
-      item.name === element ? { ...item, count: (item.count += 1) } : item
+      item.name === element ? { ...item, count: (item.count += 1) } : item,
     );
     setElementsObs(newElements);
     setHistory([...history, element]);
@@ -218,7 +236,6 @@ function Mielogram(props) {
       return item.name === reduce ? { ...item, count: curCount - 1 } : item;
     });
 
-    console.log(updateElementsObs[0].name, updateElementsObs[0].count);
     setElementsObs(updateElementsObs);
 
     if (history.length === 0) setHistory(["-"]);
